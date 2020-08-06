@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALARM</title>
+    <link rel="stylesheet" href="/ALARM.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>MY ALARM CLOCK</h1>
+    </div>
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+      <h3 class="primary">Get things done - BE PRODUCTIVE</h3>
+      <hr style="border-top: 1px dotted #ccc;" />
+      <center>
+        <input type="datetime-local" id="alarmTime" />
+        <button
+          type="button"
+          onclick="setAlarm(this);"
+          id="alarmButton"
+          class="btn btn-success"
+        >
+          <span class="glyphicon glyphicon-time"></span> Set Alarm
+        </button>
+      </center>
+      <br />
+      <div id="selectButton" style="display: none;">
+        <center>
+          <button onclick="snoozeAlarm();" class="btn btn-warning">
+            <span class="glyphicon glyphicon-pause"></span> Snooze 5 minutes
+          </button>
+          <button onclick="stopAlarm();" class="btn btn-danger">
+            <span class="glyphicon glyphicon-stop"></span> Stop Alarm
+          </button>
+        </center>
+      </div>
+    </div>
+
+    <script src="/ALARM.js"></script>
+  </body>
+</html>
