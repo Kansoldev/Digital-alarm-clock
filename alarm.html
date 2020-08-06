@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="main">  
+            
+            <div class="box1">
+                <div class="clock_logo"> <i class="fas fa-clock"></i></div>
+               <div class="cloud"><i class="fas fa-cloud-moon"></i></div>
+                <h3> Clock</h3>
+                <p class="timeZone"> West African Time</p>
+                
+                <div class="clockBox">
+                    <div class="time">
+                        <input type="text" class="hr" value=00>
+                        <span>:</span>
+                        <input type="text" class="mn" value="44"> 
+                        <!-- <span>:</span> -->
+                        <!-- <input type="Number" class="sc" value="59"> -->
+                    </div>
+                    <div class="alarmBox">
+                        <div class="alarm_hr">
+                            <input type="text" class="almHr" value="44">
+                        </div>
+                        <span>:</span>
+                        <div class="alarm_mn">
+                            <input type="text" class="almMn" value="44">
+                        </div>
+                    </div>
+                    <div class="alarm_logo">  <i class="far fa-clock"></i></div>
+                </div>
+                <div class="date">
+                    <h3>Date</h3>
+                    <div class="day"> <input type="text" name="week day" value="Today" id=""></div>
+                    <div class="actualDate"> 
+                        <input type="text" name="day" value="10" id="day">
+                         <input type="text" name="month" value="08" id="month">
+                          <input type="text" name="year" value="2017" id="year">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="box2">
+                <h2> Alarm </h2>
+              <hr>
+                <div class="alarms">
+                    <h4 class="almText">Alarm</h4>
+                    <div class="alm_setting">
+                            <div class="setAlarm">
+                                <input type="text" class="setHr" value="10">
+                                <span style="line-height: 40px;font-size: 28px;">:</span>
+                                <input type="text" class="setMn" value="33">
+                
+                                <div class="toggle">
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                </label>
+            </div>
+                                 </div>
+
+                            <button class="addAlarm">
+                                <span class="plus">+</span> Add Alarm
+                            </button>
+                        </div>
+                    </div>
+
+                       <div class="timer_setting">
+                            <div class="setTimer">
+                                <input type="text" class="setTmHr" value="06">
+                                <span style="line-height: 40px;font-size: 28px;">:</span>
+                                <input type="text" class="setTmMn" value="38">
+                            </div>
+                               
+                                <div class="toggle2">
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                </label>
+            </div>
+                            <button class="addTimer">
+                                <span class="plus"><i class="fas fa-stopwatch"></i></span> Timer
+                            </button>
+                        </div>
+
+                        <button class="addTimer2">
+                                <span class="plus">+</span> Timer
+                            </button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
