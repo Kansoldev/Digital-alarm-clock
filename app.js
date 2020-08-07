@@ -1,5 +1,5 @@
 var timer = document.getElementById("timer");
-var alarmhours = document.getElementById("alarmhours");
+var alarmhour = document.getElementById("alarmhour");
 var alarmmins = document.getElementById("alarmmins");
 var alarmsecs = document.getElementById("alarmsecs");
 var ampm = document.getElementById("ampm");
@@ -51,23 +51,23 @@ function addHour(id) {
 	}
 }
 
-addHour(alarmhours);
+addHour(alarmhour);
 addSec(alarmsecs);
 addMins(alarmmins);
 
 start.onclick = function() {
 	if (activeAlarm === false) {
-		alarmhours.disabled = true;
+		alarmhour.disabled = true;
 		alarmmins.disabled = true;
 		alarmsecs.disabled = true;
 		ampm.disabled = true;
 
-		alarmElement = alarmhours.value + ":" + alarmmins.value + ":" + alarmsecs.value + " " + ampm.value;
+		alarmElement = alarmhour.value + ":" + alarmmins.value + ":" + alarmsecs.value + " " + ampm.value;
 
 		this.textContent = "Clear Alarm";
 		activeAlarm = true;
 	} else {
-		alarmhours.disabled = false;
+		alarmhour.disabled = false;
 		alarmmins.disabled = false;
 		alarmsecs.disabled = false;
 		ampm.disabled = false;
