@@ -1,4 +1,3 @@
-// Side note - learn how to also use const and let instead of var
 var timer = document.getElementById("timer");
 var alarmhours = document.getElementById("alarmhours");
 var alarmmins = document.getElementById("alarmmins");
@@ -26,10 +25,6 @@ function showTime() {
 
 showTime();
 
-/* I removed the select variable you 
-created in all these functions,
-there is no need 
-*/
 function addSec(id) {
 	var sec = 59;
 
@@ -38,10 +33,6 @@ function addSec(id) {
 	}
 }
 
-/* 
-i added this function,
-it wasnt part of the screenshot you sent
-*/
 function addMins(id) {
 	const min = 59;
 
