@@ -1,48 +1,55 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     padding: 0;
-    margin: 10px, 0px, 0px, 0px;
-
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
 }
-.mainContainer{
-   
+
+button {
+    outline: 0;
+    font-family: Avenir;
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid rgb(89, 64, 92);
+}
+
+.mainContainer {
     position: relative;
     text-align: center;
 }
-.clock_logo{
+
+.clock_logo {
     position: absolute;
     margin-top: 20px;
     margin-right: 80%;
     font-size: 1.6rem;
 }
-.cloud{
+
+.cloud {
     position: absolute;
     margin-top: 20px;
     margin-left: 80%;
     font-size: 1.6rem;
 }
-    .main{
-         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        
-           
-    }
-    .day > input{
-        text-align: center;
-        width: 4.6rem;
-        color: whitesmoke;
-        background: none;
-        border: none;
-    }
 
-    .box1 {
-    background-color: rgb(10, 10, 10);
-    box-shadow: 0px 0px 7px 3px grey;
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box1 {
+    background-color: #1b262c;
     width: 20rem;
     height: 90vh;
     border-radius: 30px;
@@ -50,342 +57,229 @@ body{
     display: flex;
     justify-content: center;
     color: whitesmoke;
-    
-    
-        
 }
-.timeZone{
+
+.timeZone {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 50px;
 }
-    .clockBox{
-        box-shadow: 0px 0px 5px 2px grey;
-        width: 16rem;
-        height: 15rem;
-        position: absolute;
-        border-radius: 50%;
-        top: 20%;
-        
-        
-    }
-    .hr, .mn{
-        width: 100px;
-        background: none; 
-        font-size: 3rem;
-        font-weight: bolder;
-        outline: hidden;
-        border: none;
-        position: absolute;
-        top: 68px;
-        color: whitesmoke;
-        
-        
-    }
-    input:nth-child(1){
-        left: 56px;
 
-    }
-    /* input:nth-child("even"){
-        left: 886px;
-    } */
-    input:nth-child(3){
-        right: 16px;
-    }
-    
-  
-    .time{
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 0.7;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20%;
-        font-size: 4rem;
-        
-       
-    }
+.clockBox {
+    box-shadow: 1px 0px 10px 3px royalblue;
+    width: 16rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 20%;
+}
 
-   
-    .alarmBox{
-        box-shadow: 0px 0px 2px 3px grey;
-        border-radius: 30px;
-                width: 70px;
-        height: 30px;
-        margin-top: 8%;
-        margin-left: 36%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        
-        /* flex-grow: 0.6px; */
-    }
-    .almHr{
-        width: 24px;
-        text-align: right;
-        color: white;
-        background: none;
-        border: none;
-        margin-right: 0px ;
-        text-shadow: 0px 0px 2px 2px grey;
-        
-    }
-    .almMn{
-        width: 24px;
-        /* font-size: 10px; */
-        text-align: right;
-        color: white;
-        background: none;
-        text-align: center;
-        border: none;
-       
+.hr,
+.mn {
+    width: 100px;
+    background: none;
+    font-size: 3rem;
+    font-weight: bolder;
+    outline: hidden;
+    border: none;
+    position: absolute;
+    top: 85px;
+    color: whitesmoke;
+}
 
-    }
-    .date{
-        position: absolute;
-        margin-top: 120%;
-    }
-    .actualDate{
-        display: flex;
-    }
-    .actualDate > input{
-        width: 40px;
-        text-align: center;
-        background: none;
-        color: whitesmoke;
-        border: none;
-        font-size: 1rem;
-        line-height: 40px;
-    }
-    .actualDate >input:nth-child(1){
-        width: 30px;
-       
-       
-    }
-    .actualDate >input:nth-child(2){
-        width: 30px;
-    }
+.time {
+    margin-top: 65px;
+    font-size: 4rem;
+}
 
-.box2{
-    /* border: 2px solid black; */
-    box-shadow: 0px 0px 6px 2px grey;
+.alarmBox {
+    box-shadow: 0px 0px 2px 3px grey;
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    margin-top: 8%;
+    margin-left: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.date {
+    position: absolute;
+    width: 100%;
+    bottom: 108px;
+}
+
+.box2 {
     width: 20rem;
     height: 90vh;
     border-radius: 30px;
     display: inline-block;
-    background-color:  rgb(10, 10, 10);
+    background-color: #1b262c;
     color: whitesmoke;
 }
-hr{
-    outline: none;
-    color:  2px solid black;
-}
-.alarms{
-/* border: 2px solid white; */
-border-width: 100%;
-margin-left: 5px;
 
-}
- .alm_setting{
-        margin-top: 0px;
-        margin-left: 0px;
-       width: 100%;
-       
-        
+@media (max-width: 480px) {
+    .box2 {
+        margin-top: 35px;
     }
- .almText{
-    width: 0%;
-    margin-top: 10px;
-    
-   
 }
-.alarm_logo{
+
+.alarms {
+    border-width: 100%;
+    margin-left: 5px;
+}
+
+.alm_setting {
+    margin-top: 40px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.alarm_logo {
     font-size: 2rem;
-    color:whitesmoke;
-    
+    color: whitesmoke;
     margin-top: 1rem;
-    
 }
-.timer_setting{
-     margin-top: 50px;
-        margin-left: 0px;
-       width: 100%;
-          
-}
-.addAlarm{
-    box-shadow: 0px 0px 2px 2px grey;
-    width: 40%;
+
+.btn-alarm {
+    width: 70%;
     border: none;
     border-radius: 70px;
     margin-top: 20px;
-    margin-left:-170px;
     padding: 6px;
     font-size: 1rem;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
-    background: none;
-    color:whitesmoke;
+    background: royalblue;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.4s;
 }
-.addTimer{
-       box-shadow: 0px 0px 2px 2px grey;
-    width: 40%;
-    border: none;
-    border-radius: 70px;
-    margin-top: 0px;
-    margin-left:-170px;
-    padding: 6px;
-    font-size: 1rem;
-    font-weight: bolder;
-    text-align: center;
-    background: none;
-    color:whitesmoke;
-    
-}
-.addTimer2{
-       box-shadow: 0px 0px 2px 2px grey;
-    width: 80%;
-    border: none;
-    border-radius: 70px;
-    margin-top: 120px;
-    margin-left:0px;
-    padding: 6px;
-    font-size: 1rem;
-    font-weight: bolder;
-    text-align: center;
-    background: none;
-    color:whitesmoke;
-    
-}
-.addTimer2 > .plus{
 
+.btn-alarm:hover {
+    background: #3282b8;
 }
-.addTimer > span{
-    margin-left: -20px;
-    letter-spacing: 10px;
-}
-.plus{
-    
-    font-weight: bolder;
-}
-h4{
-   /* position: absolute;   */
-   
-  
-   
-}
-.setAlarm{
+
+.setAlarm {
     width: 100%;
     display: flex;
     margin-top: -20px;
     color: white;
-    
-   
 }
-.setTimer{
+
+.setTimer {
     width: 100%;
     display: flex;
     margin-top: -20px;
     color: white;
     margin-left: 10px;
 }
-.setHr, .setMn{
+
+.setHr,
+.setMn {
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     background: none;
     border: none;
-     color: whitesmoke;
-    text-shadow: 0px 0px 2px  white;
-}
-.setTmHr, .setTmMn{
-     width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align:center;
-    background: none;
-    border: none;
-     color: whitesmoke;
-    text-shadow: 0px 0px 2px  white;
+    color: whitesmoke;
+    margin: 0;
 }
 
-
-.toggle > label{
-    margin-right: -20rem;
-    margin-top: .5rem;
-
+.toggle {
+    width: 50%;
+    align-self: center;
+    text-align: right;
+    margin-bottom: 13px;
 }
-.toggle2 > label{
-    
-    bottom: 2.4rem;
-    left:  6.7rem;
 
-}
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-.switch input { 
-  opacity: 0;
-  width: 100px;
-  height: 0px;
+.switch input {
+    opacity: 0;
+    width: 100px;
+    height: 0px;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(0, 0, 0);
-  -webkit-transition: .4s;
-  transition: .4s;
-
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #59405c;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: rgb(241, 7, 7);
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: rgba(0,0,0,.5);
-}
-input:checked + .slider:before{
-    background-color: rgb(13, 230, 49);
-    box-shadow: 0px 0px 2px 2px black;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+    background-color: #3282b8;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    background-color: #fff;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
+}
+
+#snooze {
+    width: 70%;
+    visibility: hidden;
+    border: none;
+    border-radius: 70px;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: skyblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.footer {
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    color: #1b262c;
+    text-transform: uppercase;
+}
+
+.footer::first-letter {
+    font-size: 32px;
+    color: darkblue;
 }
