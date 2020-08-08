@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alarm clock</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="alarm.css" />
+    </head>
+
+    <body>
+        <div class="mainContainer">
+            <div class="main">
+                <div class="box1">
+                    <div class="clock_logo">
+                        <i class="fas fa-clock"></i>
+                    </div>
+
+                    <div class="cloud">
+                        <i class="fas fa-cloud-moon"></i>
+                    </div>
+
+                    <h3>Clock</h3>
+                    <p class="timeZone">West African Time</p>
+
+                    <div class="clockBox">
+                        <div class="time">
+                            <p class="hr" id="timer-mins" style="margin: 0;" contenteditable="true">00</p>
+                            <span>:</span>
+                            <p class="mn" id="timer-secs" style="margin: 0;right: 0;" contenteditable="true">00</p>
+                        </div>
+
+                        <div class="alarm_logo">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+
+                    <div class="date">
+                         <button class="btn-alarm" id="timerbtn">
+                            Start Timer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <h2>Alarm</h2>
+                    
+                    <hr />
+                    
+                    <div class="alarms">
+                        <div class="alm_setting">
+                            <div class="setAlarm">
+                                <p class="setHr" id="hr" contenteditable="true">20</p>
+                                <span style="line-height: 40px; font-size: 28px;">:</span>
+                                <p class="setMn" id="min" contenteditable="true">04</p>
+
+                                <p style="color: #fff;" id="ampm" contenteditable="true">PM</p>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" id="check" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="snooze">+5 Seconds</button>
+                    </div>
+
+                    <button class="btn-alarm">+&nbsp;Add Alarm</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer">By Team JavaScript I</p>
+
+        <script src="alarm.js"></script>
+    </body>
+</html>
